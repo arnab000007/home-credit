@@ -1,0 +1,128 @@
+COL,Observations
+TARGET,"For almost 92 per cent of the loans, a client paid without any difficulties."
+TARGET,"In the beginning, we can comment that we will have unbalanced classification problem to solve."
+NAME_CONTRACT_TYPE,Most of the Loans are Cash Loans around 90.5 percent of total loans.
+NAME_CONTRACT_TYPE,"For Very less number of loans of each category, the client face difficulties."
+NAME_CONTRACT_TYPE,There are some differences in default rate for both contract type.
+CODE_GENDER,We have more female data points than Male. 
+CODE_GENDER,"We have 14170 examples of laon taken by Female and face difficulties. The same number for male is 10655. Although the number is less for Male but percentage of total loans for Male, are higher than the same number of Female in terms of loan repayment difficulties."
+CODE_GENDER,"he Third Gender ""XMA"" have only 4 examples which is very insignificant."
+FLAG_OWN_CAR,Most of the loan taking person do not have Car.
+FLAG_OWN_CAR,There are slight differences in percentage between person having a car and face some difficulties & person having no car and face some difficulties.
+FLAG_OWN_REALTY,Most of the loan taker owns their house.
+FLAG_OWN_REALTY,Their are hardly any differences between owning a house or not to their loan repayment capabilities.
+CNT_CHILDREN,Most of the loan taker have no Children and also face less difficulties.
+AMT_INCOME_TOTAL,There are some people who are getting very high amount of Salary.
+AMT_INCOME_TOTAL,There are less number of defaults when salary are very low or very high.
+AMT_CREDIT,There are high number of default when loan amount is small.
+AMT_ANNUITY,There are almost no differences in distribution of "AMT_ANNUITY" between 2 classes.
+AMT_GOODS_PRICE,There are some differences between distribution of 2 class with good's price.
+NAME_TYPE_SUITE,Most of the time the borrower visit the lender office alone. For All available value have the similar default rate. But for the rows without any values for this column have different deefault rate. So that is why we are keeping the columns.
+NAME_INCOME_TYPE,More percent of Working profressional have defaulted.
+NAME_INCOME_TYPE,State Servants & Pentioner have less number of default rate.
+NAME_INCOME_TYPE,"Student, Unemplyed, Businessman, Maternity Leave have very few data point."
+NAME_EDUCATION_TYPE,Lower Secondary and Secondary / secondary special have more default rate than others.
+NAME_EDUCATION_TYPE,The people have done Higher education have less dafault rate. If they had not completed than the default rate is higher.
+NAME_EDUCATION_TYPE,"Althrough, Academic degree holder have less number of datapoint than others, they have minimum default rate."
+NAME_FAMILY_STATUS,Widow people have very less default rate compare to others.
+NAME_FAMILY_STATUS,Single / not married & Civil marriage family have higher dafault rate almost 10%.
+NAME_HOUSING_TYPE,Most of the borrower have House / apartment almost 89 percent of datapoint.
+REGION_POPULATION_RELATIVE,There are small differences in distribution of "REGION_POPULATION_RELATIVE" for both classes.
+DAYS_BIRTH,Here we can see clear difference between distribution of DAYS_BIRTH for 2 different classes.
+DAYS_BIRTH,Older people have very less default rate compare to younger people.
+DAYS_EMPLOYED,"There are 55374 rows with the value 365243.0, which is invalid. We need to handle this value while preprocessing."
+DAYS_EMPLOYED,New joiners are borrowing more loan and they have more default rate.
+DAYS_REGISTRATION,The people who have done new registrations have slightly more default rate.
+DAYS_ID_PUBLISH,Here we can see clear difference between distribution of DAYS_ID_PUBLISH for 2 different classes.
+OWN_CAR_AGE,There are lots if rows with blank values.
+OWN_CAR_AGE,"People who have bought the car recently, are willing to take loan."
+OWN_CAR_AGE,There are lot of people do not have car so their data is not available. We have to replace with -1.
+FLAG_MOBIL,Ony one people did not provide the Mobile number. This column will not help us to predict the Target variable.
+FLAG_EMP_PHONE,The People have provided the Employee Phone number have more default rate. But We need to verify it later.
+FLAG_WORK_PHONE,Most of the people around 80% did not provide work phone number.
+FLAG_WORK_PHONE,Who provide the work phone number have less chance to default not significantly.
+FLAG_CONT_MOBILE,"Only for 0.19% people, the mobile phone is not reachable. Everybody other than these people the mobile number is reachable."
+FLAG_PHONE,Only 28% people provided the home phone number and they have slightly less default rate.
+FLAG_EMAIL,Only 5.5% people provided the email address and they have similar default rate compare to the people who did not provided the email address. We can drop this column.
+OCCUPATION_TYPE,"Some Occupation have very high default rate - Low-skill Laborers had 17%, Drivers had 11%, Laborers had 10.5%."
+OCCUPATION_TYPE,"Core staff, Manager, High skill tech staff have very low default rate."
+OCCUPATION_TYPE,We can inroduce a category for not available values.
+CNT_FAM_MEMBERS,Almost 98% of people have less than 4 people in their family.
+CNT_FAM_MEMBERS,"We are very few data point with no. of family members greater than 5, so we all replace with 5 if no. of family members greater than 5."
+CNT_FAM_MEMBERS,"Instead of treating this column as numeric, we will treat this column as categorical."
+REGION_RATING_CLIENT,Rating have very good potential to identify the default loan. 1st rating holder have 5% default rate and 3rd rating holders have 11% defaut rate.
+REGION_RATING_CLIENT,Most of the people have 2 rating and they have 8% default rate.
+REGION_RATING_CLIENT_W_CITY,Region Rating have very good potential to identify the default loan. People from 1st rated region have 5% default rate and 3rd rated region holders have 11% defaut rate.
+REGION_RATING_CLIENT_W_CITY,Most of the people are from 2 rated region and they have 8% default rate.
+WEEKDAY_APPR_PROCESS_START,Each Weekday have similar number of application.
+WEEKDAY_APPR_PROCESS_START,For each day it have similar default rate. We can drop this feature.
+HOUR_APPR_PROCESS_START,For each day it have similar default rate. We can drop this feature.
+REG_REGION_NOT_LIVE_REGION,"For Very few people, the permarent addreess is not mtching with the contact address. and there is not any significance difference between default rate. We can drop this column."
+REG_REGION_NOT_WORK_REGION,For Only 5% people have different work address than permarent address. There is no significant difference default rate. We an drop the column.
+LIVE_REGION_NOT_WORK_REGION,For Only 5% people have different work address than contact address. There is no significant difference default rate. We an drop the column.
+REG_CITY_NOT_LIVE_CITY,For 7% people have different permarent address than contact address at city level.
+REG_CITY_NOT_LIVE_CITY,Who have lived different cities have more default rate.
+REG_CITY_NOT_WORK_CITY,For 23% people have different permarent address than work address at city level.
+REG_CITY_NOT_WORK_CITY,Who have different parmarent address than work address have more default rate.
+LIVE_CITY_NOT_WORK_CITY,Who have different current address than work address have slightly more default rate.
+ORGANIZATION_TYPE,There are some difference in percentage Default rate.
+EXT_SOURCE_1,There are lot of rows(173378) does not have any value in this column. We need to replace the value with mean values.
+EXT_SOURCE_1,This values have different distribution for both target classes.
+EXT_SOURCE_2,There are some rows(660) does not have any value in this column. We need to replace the value with mean values.
+EXT_SOURCE_2,This values have different distribution for both target classes.
+EXT_SOURCE_3,There are lots of rows(60965) does not have any value in this column. We need to replace the value with mean values.
+EXT_SOURCE_3,This values have slight different distribution for both target classes.
+APARTMENTS_AVG,There are lots of rows does not have any value for this column.
+APARTMENTS_AVG,It is very difficult say that both target classess have different distribution. We can drop this column.
+BASEMENTAREA_AVG,There are lots of rows does not have any value for this column.
+BASEMENTAREA_AVG,It is very difficult say that both target classess have different distribution. We can drop this column.
+YEARS_BEGINEXPLUATATION_AVG,There are lots of rows does not have any value for this column.
+YEARS_BEGINEXPLUATATION_AVG,There are no differences in distribution for both classes. We can drop this column.
+YEARS_BUILD_AVG,There are lots of rows does not have any value for this column.
+YEARS_BUILD_AVG,There are no differences in distribution for both classes. We can drop this column.
+COMMONAREA_AVG,There are lots of rows does not have any value for this column.
+COMMONAREA_AVG,There are no differences in distribution for both classes. We can drop this column.
+ELEVATORS_AVG,Most of values of this column is zero. and there are blank values as well for lots of rows as well. We can replace blank value with mean.
+ENTRANCES_AVG,We have very null value for this column in the dataset. and also there are very less differences in the distribution of both target class.
+FLOORSMAX_AVG,Most of values of this column is zero. and there are blank values as well for lots of rows as well. We can replace blank value with mean.
+FLOORSMIN_AVG,Most of values of this column is zero. and there are blank values as well for lots of rows as well. We can replace blank value with mean.
+LANDAREA_AVG,We have lots of rows with null value for this column in the dataset. and also there are very less differences in the distribution of both target class. We can remove the column.
+LIVINGAPARTMENTS_AVG,We have lots of rows with null value for this column in the dataset. and also there are very less differences in the distribution of both target class. We can remove the column.
+LIVINGAREA_AVG,We have lots of rows with null value for this column in the dataset. and also there are very less differences in the distribution of both target class.
+NONLIVINGAPARTMENTS_AVG,We have lots of rows with null value for this column in the dataset. and also there are very less differences in the distribution of both target class. We can remove the column.
+NONLIVINGAREA_AVG,We have lots of rows with null value for this column in the dataset. and also there are very less differences in the distribution of both target class. We can remove the column.
+APARTMENTS_MODE,We have lots of rows with null value for this column in the dataset. and also there are very less differences in the distribution of both target class. We can remove the column.
+BASEMENTAREA_MODE,We have lots of rows with null value for this column in the dataset. and also there are very less differences in the distribution of both target class. We can remove the column.
+YEARS_BEGINEXPLUATATION_MODE,We have lots of rows with null value for this column in the dataset. and also there are very less differences in the distribution of both target class. We can remove the column.
+YEARS_BUILD_MODE,We have lots of rows null value for this column in the dataset. and also there are very less differences in the distribution of both target class. We can remove the column.
+COMMONAREA_MODE,We have lots of rows with null value for this column in the dataset. and also there are very less differences in the distribution of both target class. We can remove the column.
+ELEVATORS_MODE,There are lots of values with zero values. There are some difference in distribution for both class. We can replace the null value with mean value
+ENTRANCES_MODE,We have lots of rows with null value for this column in the dataset. and also there are very less differences in the distribution of both target class. We can remove the column.
+FLOORSMAX_MODE,There are lots of values with zero values. There are some difference in distribution for both class. We can replace the null value with mean value.
+FLOORSMIN_MODE,"There are lots of rows(over 200K) with zero values. As there are some difference in distribution for both class, We can keep this column and replace the null value with mean value."
+LANDAREA_MODE,We have lots of rows with null value for this column in the dataset. and also there are very less differences in the distribution of both target class. We can remove the column.
+LIVINGAPARTMENTS_MODE,We have lots of rows with null value for this column in the dataset. and also there are very less differences in the distribution of both target class. We can remove the column.
+LIVINGAREA_MODE,We have lots of rows with null value for this column in the dataset. and also there are not significant differences in the distribution of both target class.
+NONLIVINGAPARTMENTS_MODE,We have lots of rows with null value for this column in the dataset. and also there are very less differences in the distribution of both target class. We can remove the column.
+NONLIVINGAREA_MODE,We have lots of rows with null value for this column in the dataset. and also there are very less differences in the distribution of both target class. We can remove the column.
+APARTMENTS_MEDI,We have lots of rows with null value for this column in the dataset. and also there are very less differences in the distribution of both target class. We can remove the column.
+BASEMENTAREA_MEDI,We have lots of rows with null value for this column in the dataset. and also there are very less differences in the distribution of both target class. We can remove the column.
+YEARS_BEGINEXPLUATATION_MEDI,We have lots of rows with null value for this column in the dataset. and also there are very less differences in the distribution of both target class. We can remove the column.
+YEARS_BUILD_MEDI,We have lots of rows with null value for this column in the dataset. and also there are very less differences in the distribution of both target class. We can remove the column.
+COMMONAREA_MEDI,We have lots of rows with null value for this column in the dataset. and also there are very less differences in the distribution of both target class. We can remove the column.
+ELEVATORS_MEDI,There are lots of values with zero values. There are some difference in distribution for both class. We can replace the null value with mean value.
+ENTRANCES_MEDI,There are lots of values with NULL values. There are some difference in distribution for both class. We can replace the null value with mean value.
+FLOORSMAX_MEDI,There are lots of values with NULL values. There are some difference in distribution for both class. We can replace the null value with mean value.
+FLOORSMIN_MEDI,There are lots of values with NULL values. There are some difference in distribution for both class. We can replace the null value with mean value.
+LANDAREA_MEDI,We have lots of rows with null value for this column in the dataset. and also there are very less differences in the distribution of both target class. We can remove the column.
+LIVINGAPARTMENTS_MEDI,We have lots of rows with null value for this column in the dataset. and also there are very less differences in the distribution of both target class. We can remove the column.
+LIVINGAREA_MEDI,There are lots of values with NULL values. There are some difference in distribution for both class. We can replace the null value with mean value.
+NONLIVINGAPARTMENTS_MEDI,We have lots of rows with null value for this column in the dataset. and also there are very less differences in the distribution of both target class. We can remove the column.
+NONLIVINGAREA_MEDI,We have lots of rows with null value for this column in the dataset. and also there are very less differences in the distribution of both target class. We can remove the column.
+FONDKAPREMONT_MODE,There are lots of rows have null value.
+FONDKAPREMONT_MODE,There are some differences in Default rate for both target classes. Even Null value have different default rate. We can add a extra category for null value.
+HOUSETYPE_MODE,There are lots of rows have null value.
+HOUSETYPE_MODE,There are some differences in Default rate for both target classes. Even Null value have different default rate. We can add a extra category for null value.
+TOTALAREA_MODE,We have lots of rows with null value for this column in the dataset. and also there are very less differences in the distribution of both target class. We can remove the column.
+
+
